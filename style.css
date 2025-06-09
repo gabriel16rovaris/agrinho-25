@@ -20,6 +20,26 @@ p .alinha{
 }
 
 .img-agro{
-    width: 600px;
+    width: 400px;
     border-radius: 40px;
+}
+
+@keyframes onda {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+}
+
+.cabecalho h1 {
+  display: inline-block;
+  animation: onda 3s ease-in-out infinite;
 }
